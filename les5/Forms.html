@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+   
+   <h1>Persoonlijke voorkeuren</h1>
+   <form action="">
+   <fieldset id="Voorkeuren">	
+       <legend>Mijn voorkeuren</legend>
+       
+    Lievelingskleur <input type="text" id="naam"><br>
+       
+    Favoriete eizoen <input type="radio" name="Seizoenen" value="Lente"> Lente
+            <input type="radio" name="Seizoenen" value="Zomer"> Zomer
+            <input type="radio" name="Seizoenen" value="Herfst"> Herfst
+            <input type="radio" name="Seizoenen" value="Winter"> Winter <br>
+       
+    Favoriete maand van het jaar
+       <select id="Maand" name="Maand">
+            <option disabled>kies</option>
+            <option value="Januari">Januari</option>
+            <option value="Februari">Februari</option>
+            <option value="Maart">Maart</option>
+            <option value="April">April</option>
+            <option value="Mei">Mei</option>
+            <option value="Juni">Juni</option>
+            <option value="Juli">Juli</option>
+            <option value="Augustus">Augustus</option>
+            <option value="September">September</option>
+            <option value="Oktober">Oktober</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select><br>  
+       
+    Ik vind mezelf 
+        <input type="checkbox" name="Eigenschap" value="Vriendelijk">Vriendelijk
+        <input type="checkbox" name="Eigenschap" value="Amuzant">Amuzant
+        <input type="checkbox" name="Eigenschap" value="Leergierig">Leergierig
+        <input type="checkbox" name="Eigenschap" value="Energiek">Energiek 
+       <br>
+       
+    Als ik een avond vrij heb, dan
+       <br>
+    <textarea id="Text" name="Text" cols="70" rows="5" placeholder="Ga ik ..."></textarea> 
+       <br>
+ 
+
+    <fieldset id="Ingevuld">
+        <legend>Formulier ingevuld?</legend>
+            <input id="Verzenden" type="submit" value="Formulier verzenden" />
+</fieldset>
+
+    
+
+   
+   </fieldset>
+   </form>
+  
+    
+</body>
+</html>
