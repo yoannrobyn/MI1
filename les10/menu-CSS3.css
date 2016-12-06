@@ -1,0 +1,101 @@
+body {
+    font-family: verdana, arial, helvetica, sans-serif;
+    margin: 0px;
+}
+
+nav ul {
+    list-style: none; /* weg met de kogels! url(img/ster2.gif)*/
+    margin: 0; /*komt bij de li's*/
+    padding: 0; /*komt bij de li's*/
+    /*width:10em;*/
+    width: calc(100% - 2px);
+}
+
+nav ul li {
+    background: orange;
+    border-style: solid none solid none;
+    border-width: 1px;
+    border-color: maroon;
+    text-align: center;
+    width: calc(20% - 0.4px);
+    /* met calc() kan je waarden berekenen op basis van verschillende soorten getallen en waarden
+     * In dit geval moeten we een stukje minder breed gaan aangezien we aan beide zijden
+     * 1px extra rand hebben : 2px extra, dus moet elk van de 5 onderdelen 0.4px minder breed zijn
+     * dan 20%
+     */
+    float: left;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+nav ul a {
+    text-decoration: none;
+    display: block;
+    border-style: solid none solid none;
+    border-width: 5px 0px 3px 0px;
+    border-color: orange;
+    transition-property:border-color;
+    transition-duration:1s;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+nav ul a:link {
+    color: #FFF;
+}
+nav ul a:visited {
+    color: #FFF;
+}
+
+nav ul li:first-of-type  a {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-style: solid none solid solid;
+    border-width: 5px 0px 3px 3px;
+}
+nav ul li:first-of-type {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-style: solid none solid solid;
+    border-width: 1px;
+}
+nav ul li:last-of-type  a {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-style: solid solid solid none;
+    border-width: 5px 3px 3px 0px;
+}
+nav ul li:last-of-type {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-style: solid solid solid none;
+    border-width: 1px;
+}
+
+nav ul a:hover, li#huidig a {
+    border-color: #c60;
+    border-width: 5px 0px 3px 0px;
+    border-style: solid none solid none;
+}
+
+@media screen and (max-width: 520px) {
+    nav ul li {
+        float: none;
+        width: 90%;
+        border-radius: 0.5em;
+        border-style: solid;
+        border-width: 1px;
+        margin-left:calc(5% - 1px);
+    }
+
+    nav ul li:first-of-type  a, nav ul li:last-of-type  a, nav ul li a {
+        border-radius: 0.5em;
+        border-style: solid;
+        border-width: 5px 3px 3px 3px;
+    }
+    nav ul li:first-of-type, nav ul li:last-of-type  {
+        border-radius: 0.5em;
+        border-style: solid solid solid solid;
+        border-width: 1px;
+    }
+    
+   
+}

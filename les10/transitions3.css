@@ -1,0 +1,82 @@
+div div p {
+	/* De transitie zal getriggered worden wanneer de achtergrondkleur 
+	 * en/of voorgrondkleur veranderen
+	 * beide eigenschappen zullen dan geanimeerd worden. */
+	transition-property: background-color, color;
+	/* De transitie zal 2s duren*/
+	transition-duration: 5s,500ms;
+	background-color: red;
+}
+
+div div p:hover {
+	color:white;
+	background-color: blue;
+}
+
+.timingdemo {
+	transition-property: left; 
+	transition-duration: 5s; 
+	transition-timing-function: ease-in-out; 
+	position: relative; left: 80%; 
+	width: 20%;
+}
+.delaydemo {
+	transition-property: top, left;
+	transition-duration: 2s, 1.5s;
+	transition-delay: .5s, 0s;
+	transition-timing-function: ease; 
+	position: relative; left: 0px; top:0px;
+	width: 20%;
+}
+
+.animdemo {
+
+	background: red;
+	position: relative;
+	width: 20%;
+	
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: opening-sequence;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+	animation-name: opening-sequence;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-direction: alternate;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes opening-sequence {
+  0% {
+    left: 0%;
+    top: 0px;
+  }
+  50%{
+    top: -100px;
+    
+  }
+  
+  100% {
+    left: 80%;
+    top: 0px;
+  }
+}
+
+/* Standard syntax */
+@keyframes opening-sequence {
+  0% {
+    left: 0%;
+    top: 0px;
+  }
+  50%{
+    top: 100px;
+  }
+  
+  100% {
+    left: 80%;
+    top: 0px;
+  }
+}

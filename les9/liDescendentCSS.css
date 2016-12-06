@@ -1,0 +1,16 @@
+/* vormgeving van een lijst */
+/* en een lijst binnen een lijst */
+li{
+	list-style: outside square none;
+	margin: -1px 0px 0px 0px;
+}
+li li {
+	list-style: outside circle url(img/ster2.gif);
+}
+a {
+	background: #def; /* lichtblauw */
+}
+
+li li a{
+	background: #fc0; /* okergeel */
+}

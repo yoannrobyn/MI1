@@ -1,0 +1,14 @@
+div div p {
+	/* De transitie zal getriggered worden wanneer de achtergrondkleur 
+	 * en/of voorgrondkleur veranderen
+	 * beide eigenschappen zullen dan geanimeerd worden. */
+	transition-property: background-color, color;
+	/* De transitie zal 2s duren*/
+	transition-duration: 2s, 1s;
+	background-color: red;
+}
+
+div div p:hover {
+	color:white;
+	background-color: blue;
+}

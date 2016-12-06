@@ -1,0 +1,16 @@
+li{
+	background-color: #7F0;
+}
+body{
+	background-color: #07f;
+}
+
+.lsp_inside{
+	list-style-position: inside;
+}
+.lsp_outside{
+	list-style-position: outside;
+}
+ul{
+	background-color: #F70;
+}

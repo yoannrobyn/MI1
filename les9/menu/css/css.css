@@ -1,0 +1,80 @@
+    body {
+        font-family: verdana, arial, helvetica, sans-serif;
+        margin: 0px;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        
+    } 
+header
+{
+    width:100%;
+}
+    
+#test2{
+    transition-property: background-color;color;
+    transition-duration: 3s;
+    background-color: red;
+}
+
+#test2:hover {
+    color:Crimson;
+    background-color: blue;
+}
+    
+    nav li {
+        background: crimson;
+        /* oranje */
+        border-style: solid none solid none;
+        border-width: 1px;
+        border-color: maroon;
+        text-align: center;
+        padding: 0;
+        /* stap 7 */
+        /*padding: 5px 0px 3px 0px;*/
+        width: 25%;
+        float: left;
+        
+    }
+    
+    nav a:hover,
+    nav #huidig a {
+        border-color: deeppink;
+        /* red*/
+        /* stap 7 : de border-style en border-width zijn nu bij 'nav a' geplaatst */
+    }
+    
+    nav a {
+        text-decoration: none;
+        /* geen lijntjes onder de linken */
+        /* stap 7 */
+        display: block;
+        border-style: solid none solid none;
+        border-width: 5px 0px 3px 0px;
+        border-color: darkred;
+    }
+    
+    nav a:link {
+        color: #222;
+        /* donkergrijs */
+    }
+    
+    nav a:visited {
+        color: #555;
+        /* lichtgrijs */
+    }
+
+@media screen and (max-width: 400px)
+{
+    nav li
+    {
+        float:none; 
+        width: 100%;
+        background-color: springgreen;
+        border-color: blueviolet;
+    }
+}

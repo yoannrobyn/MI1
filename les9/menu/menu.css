@@ -1,0 +1,58 @@
+/*ul {
+   list-style: outside circle url(img/ster2.gif) ;
+}
+
+li {
+   list-style: outside disc url(img/ster.gif);
+}
+
+li li {
+   list-style: outside disc url(img/ster2.gif);
+}
+
+*/
+body{
+	font-family:verdana, arial, helvetica, sans-serif;
+	margin:0px;
+}
+
+
+#navigatie{
+	list-style: none ; /* weg met de kogels! url(img/ster2.gif)*/
+	margin:0; /*komt bij de li's*/
+	padding:0; /*komt bij de li's*/
+	/*width:10em;*/
+	width:100%;
+}
+
+#navigatie li{
+	background: orange;
+	border-style:solid none solid none;
+	border-width:1px;
+	border-color:maroon;
+	text-align:center;
+	width:calc(100% / 5);
+	float:left;
+
+}
+
+#navigatie a{
+	text-decoration:none;
+	display:block;
+	border-style:solid none solid none;
+	border-width:5px 0px 3px 0px;
+	border-color:orange;
+}
+
+
+#navigatie a:link{
+	color:#222; 
+}
+#navigatie a:visited{
+	color:#555;
+}
+#navigatie a:hover, li#huidig a{
+	border-color:#c60;
+
+}
+
