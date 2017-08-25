@@ -1,0 +1,254 @@
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header {
+	background: #35424a;
+	color: #FFFFFF;
+	padding-top: 4%;
+	min-height: 7%;
+	border-bottom: red 5px solid;
+}
+
+header a {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+header li {
+	float: left;
+	display: inline;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#aethyra {
+	float: left;
+}
+
+#aethyra h1 {
+	margin: 0;
+}
+
+nav {
+	float: right;
+	margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+	color: red;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: #cccccc;
+}
+
+header img {
+	height: 8%;
+	float: left;
+	margin-right: 5%;
+}
+
+#slogan {
+	min-height: 400px;
+	width: 100%;
+	height: 400px;
+	
+}
+
+.club {
+	text-align: center;
+	padding: 15px;
+	color: #FFFFFF;
+	background-color: #35424a;
+}
+
+.info {
+	width: 80%;
+	display: flex;
+}
+
+.info h2 {
+	color: #35424a;
+	font-size: 1.8rem;
+}
+
+.info h3 {
+	color: #35424a;
+	font-size: 1.2rem;
+}
+
+.info p {
+	color: #556169;
+	font-size: 1rem;
+}
+
+.leftbox {
+	float: left;
+	width: 35%;
+	padding: 10px;
+	margin-left: 15%;
+	text-align: center;
+}
+
+.rightbox {
+	float: right;
+	width: 35%;
+	padding: 10px;
+	margin-left: 15%;
+	text-align: center;
+}
+
+#boxes {
+	background-color: #556169;
+}
+
+.box {
+	float: left;
+	width: 30%;
+	padding: 15px;
+	margin-left: 10%;
+	text-align: center;
+}
+
+.box img {
+	width: 90px;
+}
+
+footer {
+	padding: 20px;
+	color: #FFFFFF;
+	background-color: #35424a;
+}
+footer img{
+	height: 5%;
+}
+a{
+	text-decoration:  none;
+	color: #FFFFFF;
+}
+a:hover{
+	color: red;
+}
+
+.lied p {
+	text-align: center
+}
+
+.lied h2,
+h3 {
+	text-align: center;
+}
+
+.gegevens {
+	width: 80%;
+	height: 47%;
+	margin: 5%;
+}
+
+label,
+input,
+select,
+textarea {
+	display: block;
+}
+
+label {
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.gegevens input,
+.yourinfo select {
+	width: 100%;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+	border: solid red;
+}
+
+.gegevens input:focus,
+select:focus {
+	width: 100%;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+	border: dashed red;
+}
+
+textarea {
+	width: 100%;
+	height: 75px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+	border: solid red;
+}
+
+textarea:focus {
+	width: 100%;
+	height: 75px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+	border: dashed red;
+}
+
+.knop input[type="submit"] {
+	font-size: 1.2rem;
+	font-family: "Libre Baskerville", serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	float: right;
+	border-radius: 5px;
+	text-transform: lowercase;
+	background-color: darkgray;
+	color: #FFFFFF;
+	width: 30%
+}
+
+.linkerbox {
+	float: left;
+	width: 30%;
+	margin-right: 20%;
+}
+
+.rechterbox {
+	float: left;
+	width: 50%;
+}
+
+.gegevens h2 {
+	color: #35424a;
+	font-size: 1.5rem;
+}
+
+.gegevens p {
+	color: #556169;
+	font-size: 1rem;
+}
